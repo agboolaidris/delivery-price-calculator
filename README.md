@@ -1,4 +1,4 @@
-# Boilerplate for nodejs-typescrip
+# Boilerplate for nodejs-typescript
 
 Steps to run this project:
 
