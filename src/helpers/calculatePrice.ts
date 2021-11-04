@@ -6,7 +6,7 @@ interface Props {
   from: string;
   to: string;
 }
-const delivery_price = ({ type, from, to }: Props): null | number => {
+const calculate_price = ({ type, from, to }: Props): null | number => {
   let pickup = routes.find((route) => {
     const res = route.place.map((e) => {
       return from.toLowerCase().includes(e);
@@ -36,4 +36,4 @@ const delivery_price = ({ type, from, to }: Props): null | number => {
   return type.toLowerCase() == "express" ? amount.price * 2 : amount.price;
 };
 
-export default delivery_price;
+export default calculate_price;

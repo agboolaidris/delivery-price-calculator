@@ -1,8 +1,7 @@
 import express from "express";
 import route from "./routes";
 
-const app = express();
-
+export const app = express();
 function Server() {
   try {
     const PORT = process.env.PORT || 5000;

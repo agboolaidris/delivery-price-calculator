@@ -24,6 +24,7 @@ export const validate_delivery = async (
 
     if (Object.keys(errors).length > 0) return res.status(400).json(errors);
 
+    //check if deliver type match the enum ['express' | 'reular']
     if (type.toLowerCase() !== "express" && type.toLowerCase() !== "regular")
       return res
         .status(400)
