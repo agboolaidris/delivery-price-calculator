@@ -19,16 +19,29 @@ The API is available at https://idris-delivery-calculator.herokuapp.com
 
 # how it work
 
-POST : ${URL}/api/deliver
+POST : `${URL}/api/deliver`
+
 The request body needs to be in JSON format and include the following properties:
 
-type - either "express" or "regular" \*required
-pickAddress - String \*required
-dropAddress - String \*required
+```bash
+type - either "express" or "regular" *required
+pickAddress - String *required
+dropAddress - String *required
+```
 
 example:
+
+```bash
 {
 "type":"regular",
 "pickAddress":"tinubu square lagos island",
 "dropAddress":"24 hundry street yaba lagos"
 }
+
+If it is successful response will be sent with a status 200 and json with price:
+
+{
+    "price":1500
+}
+
+```
