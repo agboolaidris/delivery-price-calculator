@@ -44,4 +44,7 @@ If it is successful response will be sent with a status 200 and json with price:
     "price":1500
 }
 
+otherwise it will return an error message with status code related to the error type:
+
+
 ```
